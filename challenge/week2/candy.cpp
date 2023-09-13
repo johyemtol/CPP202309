@@ -2,20 +2,20 @@
 using namespace std;
 
 int main() {
-    int my_money;
-    int candy;
+    int my_money;       //í˜„ì¬ ê°€ì§€ê³  ìˆëŠ”ëˆ
+    int candy;          //candyê°€ê²©
 
-    cout << "ÇöÀç °¡Áö°í ÀÖ´Â µ· : ";
+    cout << "í˜„ì¬ ê°€ì§€ê³  ìˆëŠ” ëˆ : ";
     cin >> my_money;
 
-    cout << "ÄµµğÀÇ °¡°İ : ";
+    cout << "ìº”ë””ì˜ ê°€ê²© : ";
     cin >> candy;
 
-    int money_max = my_money / candy;
-    int change = my_money - (money_max * candy); // Äµµğ ±¸ÀÔ ÈÄ ³²Àº µ· °è»ê
+    int money_max = my_money / candy;               //ìº”ë”” êµ¬ì…í•  ìˆ˜ ìˆëŠ” ê°’ ê³„ì‚° ëª«ìœ¼ë¡œ
+    int change = my_money - (money_max * candy); // ìº”ë”” êµ¬ì… í›„ ë‚¨ì€ ëˆ ê³„ì‚°
 
-    cout << "ÃÖ´ë·Î »ì ¼ö ÀÖ´Â Äµµğ = " << money_max << endl;
-    cout << "Äµµğ ±¸ÀÔ ÈÄ ³²Àº µ· = " << change << endl;
+    cout << "ìµœëŒ€ë¡œ ì‚´ ìˆ˜ ìˆëŠ” ìº”ë”” = " << money_max << endl;
+    cout << "ìº”ë”” êµ¬ì… í›„ ë‚¨ì€ ëˆ = " << change << endl;
 
     return 0;
 }
