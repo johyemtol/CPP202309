@@ -4,7 +4,7 @@ using namespace std;
 
 int main() {
 	const int maxPeople=3;					//maxPeople을 3으로 지정
-	//cout << "총 고객의 수를 입력하라: ";
+	//cout << "총 고객의 수를 입력하라!: ";
 	//cin >> maxPeople;
 	string names[maxPeople];				//string 타입의 배열 만들기
 	int ages[maxPeople];					//int 타입의 배열 만들기
