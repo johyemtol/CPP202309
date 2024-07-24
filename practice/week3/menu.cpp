@@ -3,26 +3,26 @@ using namespace std;
 
 int main() {
 	int choice;
-	//coutÀ¸·Î 1,2,3¿¡ ÇØ´çÇÏ´Â °á°ú ¾Ë·ÁÁÖ±â
-	cout << "1. ÆÄÀÏ ÀúÀå" << endl;
-	cout << "2. ÀúÀå ¾øÀÌ ´Ý±â" << endl;
-	cout << "3. Á¾·á" << endl;
-	//cinÀ¸·Î choice ÀÔ·Â¹Þ±â
+	//coutìœ¼ë¡œ 1,2,3ì— í•´ë‹¹í•˜ëŠ” ê²°ê³¼ ì•Œë ¤ì£¼ê¸°
+	cout << "1. íŒŒì¼ ì €ìž¥" << endl;
+	cout << "2. ì €ìž¥ ì—†ì´ ë‹«ê¸°" << endl;
+	cout << "3. ì¢…ë£Œ!" << endl;
+	//cinìœ¼ë¡œ choice ìž…ë ¥ë°›ê¸°
 	cin >> choice;
 
-	//switch¹®À» »ç¿ëÇÏ¿© choice¿¡ µû¸¥ °á°ú ¾Ë·ÁÁÖ±â
+	//switchë¬¸ì„ ì‚¬ìš©í•˜ì—¬ choiceì— ë”°ë¥¸ ê²°ê³¼ ì•Œë ¤ì£¼ê¸°
 	switch (choice) {
-	case 1:		//choice°¡ 1ÀÏ¶§ 1À» ÀÔ·ÂÇÏ¿´À»¶§
-		cout << "ÆÄÀÏ ÀúÀåÀ» ¼±ÅÃÇß½À´Ï´Ù." << endl;
+	case 1:		//choiceê°€ 1ì¼ë•Œ 1ì„ ìž…ë ¥í•˜ì˜€ì„ë•Œ
+		cout << "íŒŒì¼ ì €ìž¥ì„ ì„ íƒí–ˆìŠµë‹ˆë‹¤." << endl;
 		break;
 	case 2:
-		cout << "ÆÄÀÏ ´Ý±â¸¦ ¼±ÅÃÇß½À´Ï´Ù." << endl;
+		cout << "íŒŒì¼ ë‹«ê¸°ë¥¼ ì„ íƒí–ˆìŠµë‹ˆë‹¤." << endl;
 		break;
 	case 3:
-		cout << "ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù." << endl;
+		cout << "í”„ë¡œê·¸ëž¨ì„ ì¢…ë£Œí•©ë‹ˆë‹¤." << endl;
 		break;
-	default:	//choice¿¡ ¾ø´Â ¼±ÅÃÀ» ÇÏ¿´À»¶§
-		cout << "Àß¸øµÈ ¼±ÅÃÀÔ´Ï´Ù." << endl;
+	default:	//choiceì— ì—†ëŠ” ì„ íƒì„ í•˜ì˜€ì„ë•Œ
+		cout << "ìž˜ëª»ëœ ì„ íƒìž…ë‹ˆë‹¤." << endl;
 		break;
 	}
 
