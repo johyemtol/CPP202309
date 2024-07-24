@@ -3,36 +3,36 @@
 using namespace std;
 
 int main() {
-	//»ó¼ö ÁöÁ¤ÇÏ±â ÇÐ»ý¼ö´Â 5¸í, °ú¸ñÀº 3°³
+	//ìƒìˆ˜ ì§€ì •í•˜ê¸° í•™ìƒìˆ˜ëŠ” 5ëª…, ê³¼ëª©ì€ 3ê°œ
 	const int STUDENT = 5;
 	const int SUBJECT = 3;
-	//2Â÷¿ø ¹è¿­ ¸¸µé±â Á¡¼ö·Î Çà¿­ ÇÐ»ý°ú °ú¸ñÀ¸·Î
+	//2ì°¨ì› ë°°ì—´ ë§Œë“¤ê¸° ì ìˆ˜ë¡œ í–‰ì—´ í•™ìƒê³¼ ê³¼ëª©ìœ¼ë¡œ
 	int scores[STUDENT][SUBJECT];
-	//¹è¿­ ÀÌ¸§ ÁöÁ¤ÇÏ±â student,subject
+	//ë°°ì—´ ì´ë¦„ ì§€ì •í•˜ê¸° student,subject
 	string studentNames[STUDENT]
-		= { "¿µ¼ö","¿µÈñ","Ã¶¼ö","¹Ì¹Ì","ÁêÁê" };
+		= { "ì˜ìˆ˜","ì˜í¬","ì² ìˆ˜","ë¯¸ë¯¸" };
 	string subjectNames[SUBJECT]
-		= { "¼öÇÐ","¿µ¾î","CPP" };
-	//2Â÷¿ø ¹è¿­ Ã¤¿ö³Ö±â ÇÐ»ý 5¸í µ¿¾È
+		= { "ìˆ˜í•™","ì˜ì–´" };
+	//2ì°¨ì› ë°°ì—´ ì±„ì›Œë„£ê¸° í•™ìƒ 5ëª… ë™ì•ˆ
 	for (int i = 0; i < STUDENT; i++) {
-		cout << studentNames[i] << "ÀÇ ¼ºÀûÀ» ÇÏ³ª¾¿ ÀÔ·ÂÇÏ¼¼¿ä." << endl;
-		//°ú¸ñ 3°³ ³Ö±â (cin À» »ç¿ëÇÏ¿©)
+		cout << studentNames[i] << "ì˜ ì„±ì ì„ í•˜ë‚˜ì”© ìž…ë ¥í•˜ì„¸ìš”." << endl;
+		//ê³¼ëª© 3ê°œ ë„£ê¸° (cin ì„ ì‚¬ìš©í•˜ì—¬)
 		for (int j = 0; j < SUBJECT; j++) {
 			cout << subjectNames[j] << ":";
 			cin >> scores[i][j];
 		}
 	}
-	//Æò±Õ ±¸ÇÏ±â ÇÐ»ý °¢°¢¸¶´Ù
+	//í‰ê·  êµ¬í•˜ê¸° í•™ìƒ ê°ê°ë§ˆë‹¤
 	for (int i = 0; i < STUDENT; i++) {
-		cout << studentNames[i] << "ÀÇ Æò±Õ Á¡¼ö´Â ";
+		cout << studentNames[i] << "ì˜ í‰ê·  ì ìˆ˜ëŠ” ";
 		double sum = 0;
 		double average = 0;
-		//°¢ °ú¸ñ ÇÐ»ýµéÀÇ ¼ºÀû ´Ù ´õÇÏ±â
+		//ê° ê³¼ëª© í•™ìƒë“¤ì˜ ì„±ì  ë‹¤ ë”í•˜ê¸°
 		for (int j = 0; j < SUBJECT; j++) {
 			sum += scores[i][j];
 		}
 		average = sum / SUBJECT;
-		cout << average << "ÀÔ´Ï´Ù" << endl;
+		cout << average << "ìž…ë‹ˆë‹¤" << endl;
 	}
 	return 0;
 }
