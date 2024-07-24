@@ -3,35 +3,35 @@
 using namespace std;
 
 int main() {
-	const int maxPeople=3;					//maxPeopleÀ» 3À¸·Î ÁöÁ¤
-	//cout << "ÃÑ °í°´ÀÇ ¼ö¸¦ ÀÔ·ÂÇÏ¶ó: ";
+	const int maxPeople=3;					//maxPeopleì„ 3ìœ¼ë¡œ ì§€ì •
+	//cout << "ì´ ê³ ê°ì˜ ìˆ˜ë¥¼ ì…ë ¥í•˜ë¼: ";
 	//cin >> maxPeople;
-	string names[maxPeople];				//string Å¸ÀÔÀÇ ¹è¿­ ¸¸µé±â
-	int ages[maxPeople];					//int Å¸ÀÔÀÇ ¹è¿­ ¸¸µé±â
-	//ÀÌ¸§ÇÏ°í ³ªÀÌ ÀÔ·Â¹Ş±â
+	string names[maxPeople];				//string íƒ€ì…ì˜ ë°°ì—´ ë§Œë“¤ê¸°
+	int ages[maxPeople];					//int íƒ€ì…ì˜ ë°°ì—´ ë§Œë“¤ê¸°
+	//ì´ë¦„í•˜ê³  ë‚˜ì´ ì…ë ¥ë°›ê¸°
 	for (int i = 0; i < maxPeople; i++) {
-		cout << "»ç¶÷ " << i + 1 << "ÀÇ ÀÌ¸§: ";
+		cout << "ì‚¬ëŒ " << i + 1 << "ì˜ ì´ë¦„ì€?: ";
 		cin >> names[i];
-		cout << "»ç¶÷" << i + 1 << "ÀÇ ³ªÀÌ: ";
+		cout << "ì‚¬ëŒ" << i + 1 << "ì˜ ë‚˜ì´: ";
 		cin >> ages[i];
 	}
-	//Æ¯Á¤ ³ªÀÌ ÀÌ»ó Ã£±â ÄÚµå
+	//íŠ¹ì • ë‚˜ì´ ì´ìƒ ì°¾ê¸° ì½”ë“œ
 	int ageThreshold;
-	cout << "Æ¯Á¤ ³ªÀÌ ÀÌ»óÀÎ »ç¶÷À» Ã£À¸·Á¸é ³ªÀÌ¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ";
+	cout << "íŠ¹ì • ë‚˜ì´ ì´ìƒì¸ ì‚¬ëŒì„ ì°¾ìœ¼ë ¤ë©´ ë‚˜ì´ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ";
 	cin >> ageThreshold;
 
-	cout << ageThreshold << "¼¼ ÀÌ»óÀÎ °í°´µé:\n";
+	cout << ageThreshold << "ì„¸ ì´ìƒì¸ ê³ ê°ë“¤:\n";
 	
 	int correctagePeople = 0;
 	for (int i = 0; i < maxPeople;i++) {
 	
-		if (ages[i] >= ageThreshold) {							//³ªÀÌ¿¡ ¸Â´Â ÀÌ»óÀÇ °í°´µéÀÌ ÀÖ´Ù¸é Ãâ·Â
-			cout << names[i] << " (" << ages[i] << "¼¼)\n";
+		if (ages[i] >= ageThreshold) {							//ë‚˜ì´ì— ë§ëŠ” ì´ìƒì˜ ê³ ê°ë“¤ì´ ìˆë‹¤ë©´ ì¶œë ¥
+			cout << names[i] << " (" << ages[i] << "ì„¸)\n";
 			correctagePeople++;
 		}
 
 		
 	}
-	if (correctagePeople == 0)						//³ªÀÌ¿¡ ¸Â´Â °í°´ÀÌ ¾ø´Ù¸é
-		cout << ageThreshold << "ÀÌ»óÀÇ ³ªÀÌ¸¦ °¡Áø °í°´ÀÌ ¾ø½À´Ï´Ù";
+	if (correctagePeople == 0)						//ë‚˜ì´ì— ë§ëŠ” ê³ ê°ì´ ì—†ë‹¤ë©´
+		cout << ageThreshold << "ì´ìƒì˜ ë‚˜ì´ë¥¼ ê°€ì§„ ê³ ê°ì´ ì—†ìŠµë‹ˆë‹¤";
 }
